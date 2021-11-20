@@ -4,7 +4,7 @@ class Api::V1::PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @players = Player.all.order(number: :asc)
+    @players = Player.all.order(name: :asc)
     render json: @players
   end
 
@@ -32,10 +32,10 @@ class Api::V1::PlayersController < ApplicationController
   def create
     @player = Player.new(player_params)
 
-    if @beer.save
-      render json: @beer
+    if @player.save
+      render json: @player
     else
-      render json: @beer.errors
+      render json: @player.errors
     end
   end
 

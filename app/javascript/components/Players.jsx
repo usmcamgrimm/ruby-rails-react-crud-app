@@ -2,7 +2,7 @@ import React from 'react'
 import { Table, message, Popconfirm } from 'antd'
 import AddPlayerModal from './AddPlayerModal'
 
-class Beers extends React.component {
+class Beers extends React.Component {
   columns = [
     {
       title: "Name",

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       get 'players/index'
       post 'players/create'
-      delete 'players/:id', to 'players#destroy'
+      delete 'players/:id', to: 'players#destroy'
     end
   end
 

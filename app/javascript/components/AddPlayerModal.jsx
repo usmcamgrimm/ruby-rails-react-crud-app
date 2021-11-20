@@ -69,8 +69,10 @@ class AddPlayerModal extends React.Component {
               name="name"
               label="Name"
               rules={[ 
-                required: true,
-                message: "Input the player name"
+                {
+                  required: true,
+                  message: "Input the player name"
+                }
               ]}
             >
               <Input placeholder="Player's Name" />
@@ -80,8 +82,10 @@ class AddPlayerModal extends React.Component {
               name="position"
               label="Position"
               rules={[ 
-                required: true,
-                message: "Add player's position"
+                {
+                  required: true,
+                  message: "Add player's position"
+                }
               ]}
             >
               <Select 
@@ -116,8 +120,10 @@ class AddPlayerModal extends React.Component {
               name="number"
               label="#"
               rules={[ 
-                required: true,
-                message: "Add player's number"
+                {
+                  required: true,
+                  message: "Add player's number"
+                }
               ]}
             >
               <Input placeholder="Player's Number" />
@@ -138,4 +144,4 @@ class AddPlayerModal extends React.Component {
   }
 }
 
-export default AddplayerModal
+export default AddPlayerModal
