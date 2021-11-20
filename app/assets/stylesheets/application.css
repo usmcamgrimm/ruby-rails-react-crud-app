@@ -13,8 +13,43 @@
  *= require_tree .
  *= require_self
  */
+ /* OFFICIAL COLTS COLORS */
+/*
+Speed Blue: 
+  #013369
+  rgb (1, 51, 105)
+White:  
+  #ffffff
+  rgb (255, 255, 255)
+Facemask Gray:  
+  #a5acaf
+  rgb (165, 172, 175)
+Anvil Black:
+  #10252c
+  rgb (29, 37, 44)
+*/
+.site-layout-content {
+  background: #ffffff;
+  padding: 24px;
+  min-height: 380px;
+}
 .logo {
   width: 250px;
-  background-image: url('../images/colts.png');
+  min-height: 75px;
+  margin: 16px 24px 16px 0;
+  float: left;
+  background-image: url(../images/colts.png);
   background-repeat: no-repeat;
+}
+.table-striped-rows th,
+.table-striped-rows td {
+  border-bottom: 1px solid #a5acaf !important;
+}
+
+.table-striped-rows tr:nth-child(2n) td {
+  background-color: #fbfbfb;
+}
+
+.table-striped-rows thead {
+  background-color: #f1f1f1;
 }
