@@ -2,7 +2,7 @@ import React from 'react'
 import { Table, message, Popconfirm } from 'antd'
 import AddPlayerModal from './AddPlayerModal'
 
-class Beers extends React.Component {
+class Players extends React.Component {
   columns = [
     {
       title: "Name",
@@ -37,6 +37,10 @@ class Beers extends React.Component {
 
   state = {
     players: [],
+  }
+
+  componentDidMount() {
+    this.loadPlayers()
   }
 
   loadPlayers = () => {
@@ -103,3 +107,5 @@ class Beers extends React.Component {
     )
   }
 }
+
+export default Players
